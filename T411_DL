@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        T411 Download Column
+// @name        T411 Rapid DL :)
 // @namespace   t411
 // @description Adds a DL button to the T411 result list
 // @include     http://www.t411.li/torrents/search/*
