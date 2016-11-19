@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        T411 Rapid DL :)
 // @namespace   t411
-// @description Adds a DL button to the T411 result list
+// @description Ajoute un bouton de téléchargement rapide sur le site T411.li
 // @include     http://www.t411.li/torrents/search/*
 // @include		http://www.t411.li/top/*
-// @version     1.1
+// @version     1.2
 // @grant       none
 // ==/UserScript==
 
