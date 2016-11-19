@@ -2,9 +2,9 @@
 // @name        T411 Download Column
 // @namespace   t411
 // @description Adds a DL button to the T411 result list
-// @include     http://www.t411.me/torrents/search/*
-// @include		http://www.t411.me/top/*
-// @version     1.0
+// @include     http://www.t411.li/torrents/search/*
+// @include		http://www.t411.li/top/*
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 
