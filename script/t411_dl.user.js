@@ -2,10 +2,10 @@
 // ==UserScript==
 // @name        T411 RapidDl
 // @namespace   t411
-// @description Ajoute un bouton de téléchargement rapide sur le site T411.li
-// @include     http://www.t411.li/torrents/search/*
-// @include		http://www.t411.li/top/*
-// @version     1.9
+// @description Ajoute un bouton de téléchargement rapide sur le site T411
+// @include     http*://*.t411.*/torrents/search/*
+// @include		http*://*.t411.*/top/*
+// @version     1.10
 // @grant       none
 // ==/UserScript==
 
