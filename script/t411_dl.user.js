@@ -5,28 +5,29 @@
 // @description Ajoute un bouton de téléchargement rapide sur le site T411.li
 // @include     http://www.t411.li/torrents/search/*
 // @include		http://www.t411.li/top/*
-// @version     1.8
+// @version     1.9
 // @grant       none
 // ==/UserScript==
 
-$.fn.addT411DownloadColumn = function() {
+
+$.fn.addt411_dl = function() {
   return this.each(function() {
     var id = this.href.split('?')[1]; // Should be something like 'id=1234'
     var newTdElement = $("<td></td>");
     if( id != undefined && id.match(/id=[0-9]+/) ) {
-      var newLinkHtml = '<a href="/torrents/download/?' + id + '"><center><img src="https://zarkyan.github.io/Greasemonkey/script/image/dl.png"/></center></a>';
+      var newLinkHtml = '<a href="/torrents/download/?' + id + '">Télécharger</a>';
       var newLinkElement = $(newLinkHtml);
       newLinkElement.css("float","left");
-      newLinkElement.css("padding-left","16px");
+      newLinkElement.css("padding-left","10px");
       newLinkElement.appendTo(newTdElement);
     }
-    newTdElement.insertAfter($(this).parent());
+    newTdElement.insertBefore($(this).parent());
   });
 };
 
 // New distinct column header for downloading
-var newThElement = $("<th><center>DL</center></th>");
-newThElement.insertAfter( $('th:contains(NFO)') );
+var newThElement = $("<th>Télécharger</th>");
+newThElement.insertBefore( $('th:contains(NFO)') );
 
 // Insert all the buttons in the new column
-$('a.nfo').addT411DownloadColumn();
+$('a.nfo').addt411_dl();
