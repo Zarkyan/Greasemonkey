@@ -3,9 +3,9 @@
 // @name        T411 RapidDl
 // @namespace   t411
 // @description Ajoute un bouton de téléchargement rapide sur le site T411.li
-// @include     http://www.t411.li/torrents/search/*
+// @include     http://www.t411.ch/torrents/search/*
 // @include		http://www.t411.li/top/*
-// @version     1.4
+// @version     1.5
 // @grant       none
 // ==/UserScript==
 
