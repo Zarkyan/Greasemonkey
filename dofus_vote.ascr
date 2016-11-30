@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptfile>
+    <settings program="actiona" version="3.9.2" scriptVersion="1.1.0" os="Windows"/>
+    <actions>
+        <action name="ActionConsole" version="1.0.0"/>
+        <action name="ActionVariable" version="1.0.0"/>
+        <action name="ActionCode" version="1.0.0"/>
+        <action name="ActionKey" version="1.0.0"/>
+        <action name="ActionClick" version="1.0.0"/>
+        <action name="ActionStop" version="1.0.0"/>
+        <action name="ActionOpenURL" version="1.0.0"/>
+        <action name="ActionPause" version="1.0.0"/>
+        <action name="ActionDataInput" version="1.0.0"/>
+        <action name="ActionGoto" version="1.0.0"/>
+    </actions>
+    <parameters/>
+    <resources/>
+    <script pauseBefore="0" pauseAfter="0">
+        <action name="ActionVariable" comment="Déclaration de la variable $vote_nombre" color="#aa0000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="variable">
+                <subParameter name="value" code="0">vote_nombre</subParameter>
+            </parameter>
+            <parameter name="positionValue">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">float</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionDataInput" comment="Définir la durée de la pause en minute">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="2" line="003"/>
+            <parameter name="editorType">
+                <subParameter name="value" code="0">line</subParameter>
+            </parameter>
+            <parameter name="defaultValue">
+                <subParameter name="value" code="0">180</subParameter>
+            </parameter>
+            <parameter name="dataType">
+                <subParameter name="value" code="0">text</subParameter>
+            </parameter>
+            <parameter name="windowTitle">
+                <subParameter name="value" code="0">Bot Vote par ZARKYAN | Définir un temps de pause</subParameter>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">temps_pause</subParameter>
+            </parameter>
+            <parameter name="windowIcon">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="question">
+                <subParameter name="value" code="0">Durée de la pause entre chaque vote ? (Durée en minutes !!)</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Ouverture de la page RPG Paradize du serveur Azote.us</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionOpenURL" comment="Ouvrir la page RPG Paradize du serveur Azote" color="#55aaff" pauseAfter="8000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="url">
+                <subParameter name="value" code="0">http://www.rpg-paradize.com/site-AZOTE+2.10+-+Items+2.37+-+DecoReco+-+Reelle+economie+-+Capture+dme-107257</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic 1 pour le code OUT" color="#ffff00" pauseAfter="100">
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0">1021:566</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic 2 pour le code OUT" color="#ffff00" pauseAfter="3000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0">1021:566</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="Copie la séléction OUT" color="#55aaff" pauseAfter="500">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">C</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Copie du code OUT pour le vote.</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Ouverture de la page Azote.us/vote/confirmation pour le vote.</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionOpenURL" comment="Ouvrir la page Azote.us/vote/confirmation" color="#55aaff" pauseAfter="7000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="url">
+                <subParameter name="value" code="0">http://www.azote.us/vote/confirmation</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic sur la textbox pour coller le code OUT" color="#ffff00" pauseAfter="100">
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0">638:411</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic sur la textbox pour coller le code OUT" color="#ffff00" pauseBefore="100" pauseAfter="1500">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0">638:411</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="Colle la séléction OUT" color="#55aaff" pauseAfter="1500">
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">V</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Colle le code OUT.</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic sur le captcha Robot" color="#ffff00" pauseAfter="10000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0">601:499</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Clic sur le captcha</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic sur valider" color="#ffff00" pauseAfter="7000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0">632:577</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Validation du vote.</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Ferme le navigateur internet" color="#ffff00">
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="unit" code="0">0</subParameter>
+                <subParameter name="value" code="0">1655:9</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Fermeture de la page.</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionCode" comment="Addition de la variable $vote_nombre = $vote_nombre + 1" color="#aa0000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="code">
+                <subParameter name="value" code="1">vote_nombre = vote_nombre +1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionConsole" comment="Affiche la valeur de la variable pour afficher combien de fois le vote a était effectué" color="#aa0000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="output">
+                <subParameter name="value" code="0">information</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">Nombre de vote total : $vote_nombre</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionPause" comment="Fait une pause après chaque vote. La durée de la pause est dans une valeur $temps_pause">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="unit">
+                <subParameter name="value" code="0">minutes</subParameter>
+            </parameter>
+            <parameter name="duration">
+                <subParameter name="value" code="1">temps_pause</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionGoto" comment="Refaire le script (Allez à Ligne 003)" color="#aa0000" pauseAfter="5000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+            <parameter name="line">
+                <subParameter name="value" code="0">003</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionStop" comment="Stop le script" color="#aa0000">
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <exception id="0" action="0" line=""/>
+        </action>
+    </script>
+</scriptfile>
